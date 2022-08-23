@@ -18,6 +18,11 @@ public final class OrderInteractor {
             .map { $0.toOrder() }
     }
     
+    public func getUpcomingTickets() -> [Order] {
+        getMyOrders()
+            .filter { $0.date ?? .init() >= .init() }
+    }
+    
     public func addOrder() {
         orderRepository.addDummyOrder()
     }

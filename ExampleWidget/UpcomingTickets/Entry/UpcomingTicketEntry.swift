@@ -1,5 +1,5 @@
 //
-//  UpcomingTicketsEntry.swift
+//  UpcomingTicketEntry.swift
 //  LearnWidgetKit
 //
 //  Created by Indra Tirta Nugraha on 16/08/22.
@@ -9,11 +9,10 @@ import Foundation
 import WidgetKit
 import LearnWidgetShared
 
-struct UpcomingTicketsEntry: TimelineEntry {
+struct UpcomingTicketEntry: TimelineEntry {
     let date: Date
     let orderId: String
     let title: String
-    let orderDate: String
     let subtitle: String
     let orderType: String
     let iconSystemName: String
@@ -22,24 +21,22 @@ struct UpcomingTicketsEntry: TimelineEntry {
         .init(string: "widget-url://\(orderId)")
     }
     
-    static func placeholder() -> UpcomingTicketsEntry {
+    static func placeholder() -> UpcomingTicketEntry {
         .init(
             date: .init(),
             orderId: "",
             title: "There's no upcoming tickets",
-            orderDate: "✈️ 🏨 🚈 🚐 🚗 🎫",
             subtitle: "Let's plan your trip with tiket.com!",
-            orderType: "",
+            orderType: "✈️ 🏨 🚈 🚐 🚗 🎫",
             iconSystemName: ""
         )
     }
     
-    static func snapshot() -> UpcomingTicketsEntry {
+    static func snapshot() -> UpcomingTicketEntry {
         .init(
             date: .init(),
             orderId: "",
             title: "Jakarta - Surabaya",
-            orderDate: Date().toString(format: "E, dd MMM yyyy HH:mm"),
             subtitle: "Tiket Air • ID 9999",
             orderType: "Flight",
             iconSystemName: "airplane.circle.fill"
@@ -48,10 +45,10 @@ struct UpcomingTicketsEntry: TimelineEntry {
 }
 
 extension Order {
-    func toSimpleEntry() -> UpcomingTicketsEntry {
-        var date: Date = Date()
+    func toUpcomingTicket() -> UpcomingTicketEntry {
+        var orderDate: Date = Date()
         if let dateWrapped = self.date {
-            date = dateWrapped
+            orderDate = dateWrapped
         }
         
         var title: String = ""
@@ -78,10 +75,9 @@ extension Order {
         }
         
         return .init(
-            date: .init(),
+            date: orderDate,
             orderId: orderId,
             title: title,
-            orderDate: date.toString(format: "E, dd MMMM yyyy HH:mm"),
             subtitle: subtitle,
             orderType: orderType,
             iconSystemName: iconSystemName

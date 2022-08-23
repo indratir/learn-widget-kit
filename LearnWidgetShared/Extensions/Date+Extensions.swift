@@ -23,6 +23,14 @@ extension Date {
         return .init()
     }
     
+    public func addSeconds(_ second: Int) -> Date {
+        if let date = Calendar.current.date(byAdding: .second, value: second, to: self) {
+            return date
+        }
+        
+        return .init()
+    }
+    
     var milliseconds: Int {
         Int((self.timeIntervalSince1970 * 1000).rounded())
     }

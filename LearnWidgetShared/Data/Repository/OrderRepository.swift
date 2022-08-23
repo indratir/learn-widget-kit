@@ -30,7 +30,7 @@ final class OrderRepository {
         if currentTime % 2 == 0 {
             orders.append(createTrainDummyOrder())
         } else {
-            orders.append(createCarRentalDummyOrder())
+            orders.append(createFlightDummyOrder())
         }
         
         if let data = orders.convertToData() {
@@ -50,7 +50,7 @@ final class OrderRepository {
     private func createFlightDummyOrder() -> OrderRepositoryParam {
         let order: OrderRepositoryParam = .init(
             id: UUID().uuidString,
-            date: Date().toString(),
+            date: Date().addSeconds(10).toString(),
             title: "\(faker.address.city()) - \(faker.address.city())",
             desc: faker.lorem.sentence(),
             type: "FLIGHT"
@@ -62,7 +62,7 @@ final class OrderRepository {
     private func createTrainDummyOrder() -> OrderRepositoryParam {
         let order: OrderRepositoryParam = .init(
             id: UUID().uuidString,
-            date: Date().toString(),
+            date: Date().addSeconds(10).toString(),
             title: "\(faker.address.city()) - \(faker.address.city())",
             desc: faker.lorem.sentence(),
             type: "TRAIN"
@@ -74,7 +74,7 @@ final class OrderRepository {
     private func createCarRentalDummyOrder() -> OrderRepositoryParam {
         let order: OrderRepositoryParam = .init(
             id: UUID().uuidString,
-            date: Date().toString(),
+            date: Date().addSeconds(10).toString(),
             title: faker.car.brand(),
             desc: faker.lorem.sentence(),
             type: "CAR_RENTAL"

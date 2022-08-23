@@ -20,6 +20,6 @@ struct UpcomingTicketsWidget: Widget {
         }
         .configurationDisplayName("Upcoming tickets")
         .description("Get to know your upcoming tickets!")
-        .supportedFamilies([.systemMedium])
+        .supportedFamilies([.systemSmall, .systemMedium])
     }
 }

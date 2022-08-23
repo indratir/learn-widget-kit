@@ -24,7 +24,7 @@
 		922CF46928AB98580035F697 /* LearnWidgetShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 922CF45528AB96C00035F697 /* LearnWidgetShared.framework */; };
 		922CF46A28AB98580035F697 /* LearnWidgetShared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 922CF45528AB96C00035F697 /* LearnWidgetShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		922CF47328AB98BC0035F697 /* UpcomingTicketsEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922CF47128AB98A40035F697 /* UpcomingTicketsEntryView.swift */; };
-		922CF47728AB99A90035F697 /* UpcomingTicketsEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922CF47428AB99560035F697 /* UpcomingTicketsEntry.swift */; };
+		922CF47728AB99A90035F697 /* UpcomingTicketEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922CF47428AB99560035F697 /* UpcomingTicketEntry.swift */; };
 		922CF47A28AB9E060035F697 /* UpcomingTicketsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922CF47928AB9E060035F697 /* UpcomingTicketsProvider.swift */; };
 		923CCDC228A8971D00F78A57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923CCDC128A8971D00F78A57 /* AppDelegate.swift */; };
 		923CCDC428A8971D00F78A57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923CCDC328A8971D00F78A57 /* SceneDelegate.swift */; };
@@ -35,6 +35,8 @@
 		923CCDF528A89F4000F78A57 /* MyOrderItemViewParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923CCDF428A89F4000F78A57 /* MyOrderItemViewParam.swift */; };
 		923CCDFA28A8A5CF00F78A57 /* MyOrdersItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923CCDF828A8A5CF00F78A57 /* MyOrdersItemCell.swift */; };
 		923CCDFB28A8A5CF00F78A57 /* MyOrdersItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 923CCDF928A8A5CF00F78A57 /* MyOrdersItemCell.xib */; };
+		924032C828B3E0A800FE4CB8 /* UpcomingTicketsSmallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924032C728B3E0A800FE4CB8 /* UpcomingTicketsSmallView.swift */; };
+		924032CA28B3E0E800FE4CB8 /* UpcomingTicketsMediumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924032C928B3E0E800FE4CB8 /* UpcomingTicketsMediumView.swift */; };
 		92ED438E28AE70B600E63F2D /* Fakery in Frameworks */ = {isa = PBXBuildFile; productRef = 92ED438D28AE70B600E63F2D /* Fakery */; };
 		92ED439028AE715D00E63F2D /* OrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ED438F28AE715D00E63F2D /* OrderType.swift */; };
 		92ED439428AE725F00E63F2D /* Fakery in Frameworks */ = {isa = PBXBuildFile; productRef = 92ED439328AE725F00E63F2D /* Fakery */; };
@@ -113,7 +115,7 @@
 		922CF45528AB96C00035F697 /* LearnWidgetShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LearnWidgetShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		922CF45728AB96C00035F697 /* LearnWidgetShared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LearnWidgetShared.h; sourceTree = "<group>"; };
 		922CF47128AB98A40035F697 /* UpcomingTicketsEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingTicketsEntryView.swift; sourceTree = "<group>"; };
-		922CF47428AB99560035F697 /* UpcomingTicketsEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingTicketsEntry.swift; sourceTree = "<group>"; };
+		922CF47428AB99560035F697 /* UpcomingTicketEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingTicketEntry.swift; sourceTree = "<group>"; };
 		922CF47928AB9E060035F697 /* UpcomingTicketsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingTicketsProvider.swift; sourceTree = "<group>"; };
 		923CCDBE28A8971D00F78A57 /* LearnWidgetKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnWidgetKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		923CCDC128A8971D00F78A57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,8 @@
 		923CCDF928A8A5CF00F78A57 /* MyOrdersItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyOrdersItemCell.xib; sourceTree = "<group>"; };
 		923CCDFD28A8AACC00F78A57 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		923CCE0228A8ABEF00F78A57 /* OrderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderInteractor.swift; sourceTree = "<group>"; };
+		924032C728B3E0A800FE4CB8 /* UpcomingTicketsSmallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingTicketsSmallView.swift; sourceTree = "<group>"; };
+		924032C928B3E0E800FE4CB8 /* UpcomingTicketsMediumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingTicketsMediumView.swift; sourceTree = "<group>"; };
 		92ED438F28AE715D00E63F2D /* OrderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderType.swift; sourceTree = "<group>"; };
 		92FFABAB28AFAE9D00AE9B3A /* LearnWidgetKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnWidgetKind.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -211,7 +215,7 @@
 		922CF46F28AB987E0035F697 /* Entry */ = {
 			isa = PBXGroup;
 			children = (
-				922CF47428AB99560035F697 /* UpcomingTicketsEntry.swift */,
+				922CF47428AB99560035F697 /* UpcomingTicketEntry.swift */,
 			);
 			path = Entry;
 			sourceTree = "<group>";
@@ -220,6 +224,8 @@
 			isa = PBXGroup;
 			children = (
 				922CF47128AB98A40035F697 /* UpcomingTicketsEntryView.swift */,
+				924032C728B3E0A800FE4CB8 /* UpcomingTicketsSmallView.swift */,
+				924032C928B3E0E800FE4CB8 /* UpcomingTicketsMediumView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -538,8 +544,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				922CF47728AB99A90035F697 /* UpcomingTicketsEntry.swift in Sources */,
+				924032C828B3E0A800FE4CB8 /* UpcomingTicketsSmallView.swift in Sources */,
+				922CF47728AB99A90035F697 /* UpcomingTicketEntry.swift in Sources */,
 				922CF47328AB98BC0035F697 /* UpcomingTicketsEntryView.swift in Sources */,
+				924032CA28B3E0E800FE4CB8 /* UpcomingTicketsMediumView.swift in Sources */,
 				922CF43328AB8D650035F697 /* UpcomingTicketsWidget.swift in Sources */,
 				922CF47A28AB9E060035F697 /* UpcomingTicketsProvider.swift in Sources */,
 			);
